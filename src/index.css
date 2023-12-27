@@ -1,9 +1,14 @@
 :root {
-  --color-bg-dart: #f5f5f5;
+  --color-bg-dark: #f5f5f5;
   --color-bg: #fdfffd;
   --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-accent: #f16e03;
+  --color-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -18,7 +23,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -27,6 +31,7 @@ body {
     rgba(75, 225, 255, 1) 27%,
     rgba(75, 225, 255, 1) 36%
   );
+  font-size: 1.2rem;
 }
 
 button {
@@ -39,6 +44,7 @@ button {
   height: 60%;
   max-width: 500px;
   background-color: var(--color-bg-dart);
+  overflow: hidden;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
