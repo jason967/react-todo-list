@@ -43,6 +43,7 @@ export default function TodoList({ filter }) {
 
 function getFilteredItems(todos, filter) {
   if (filter === "all") {
+    // gogo
     return todos;
   }
   return todos.filter((todo) => todo.status === filter);
